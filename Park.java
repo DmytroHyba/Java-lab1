@@ -19,7 +19,7 @@ public class Park {
 
     }
 
-    public Park(String address, int lenght, int ticketPrize, String name_trees){
+    public Park(String address, int lenght, int ticketPrize, String nameTrees){
 
         this.address = address;
         this.lenght = lenght;
@@ -29,15 +29,15 @@ public class Park {
 
     public Park (String address,
                  int lenght,
-                 int ticket_prize,
-                 String name_trees,
-                 String name_park,
+                 int ticketPrize,
+                 String nameTrees,
+                 String namePark,
                  String city,
                  String country) {
         this.address = address;
         this.lenght = lenght;
-        this.ticketPrize = ticket_prize;
-        this.name = name_park;
+        this.ticketPrize = ticketPrize;
+        this.name = nameTrees;
     }
 
     public String getNameTrees() {
@@ -54,9 +54,9 @@ public class Park {
         return name;
     }
 
-    public void setName_park(String name_park) {
+    public void setName_park(String namePark) {
 
-        this.name = name_park;
+        this.name = namePark;
     }
 
     public static void printStaticEntranceTicketPrize() {
@@ -82,19 +82,20 @@ public class Park {
     }
     public void resetValues (String address,
                               int lenght,
-                              int ticket_prize,
-                              String name_trees,
-                              String name_park,
+                              int ticketPrize,
+                              String nameTrees,
+                              String namePark,
                               String city,
                               String country) {
 
         this.address = address;
         this.lenght = lenght;
-        this.ticketPrize = ticket_prize;
+        this.ticketPrize = ticketPrize;
         this.country = country;
-        this.name = name_park;
+        this.name = namePark;
         this.city = city;
-        this.name = name_trees;
+        this.name = nameTrees;
     }
 }
+
 
